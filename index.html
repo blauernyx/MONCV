@@ -39,8 +39,8 @@
             </header>
             
             
-            <section>
-                <h2 class="round">Experiences Professionnelles</h2>
+            <h2 class="round">Experiences Professionnelles <button onclick="detailsexppro()">+</button></h2>
+            <section id="exppro" style="display:none;">
                 <article>
                     <h3>Stage de formation à Computime</h3>
                     <p>Conception et réalisation d'une application desktop d'extraction de données des pointeuses</p>
@@ -50,8 +50,20 @@
                     <p>Mise en place d’un système de management de sécurité de l’information conforme à la norme 27001 : 2013 en vue d’une certification</p>
                 </article>
             </section>
-            <section>
-                <h2 class="round">Projets</h2>
+            <script>
+                function detailsexppro() {
+                    var div = document.getElementById("exppro");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
+            
+            <h2 class="round">Projets <button onclick="detailsprojet()">+</button></h2>
+            <section id="projet" style="display:none;">
                 <article>
                     <h3>Application de gestion de location de voitures</h3>
                     <p>Gestion des bases de données d'une location de voiture, analyse et visualisation des données.</p>
@@ -63,8 +75,20 @@
                     <p><strong>outils utilisés: </strong>HTML, CSS, JavaScript,React JS, MySQL, PHP</p>
                 </article>
             </section>
-            <section>
-                <h2 class="round">Formation</h2>
+            <script>
+                function detailsprojet() {
+                    var div = document.getElementById("projet");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 class="round">Formation <button onclick="detailsform()">+</button></h2>
+            <section id="form" style="display:none;">
+                
                 <ul>
                     <li>master 2 en "Développement Logiciel des systèmes d'information à l'Université de Bretagne Occidentale</li>
                     <li>Cycle d’ingénieur en Management des Systèmes d’Information et de Production à l'École Nationale Supérieure des Mines de Rabat</li>
@@ -72,12 +96,36 @@
                     <li>Baccalauréat en Sciences Mathématiques B – mention Très bien</li>
                 </ul>
             </section>
-            <section>
-                <h2 class="round">Certifications</h2>
+            <script>
+                function detailsform() {
+                    var div = document.getElementById("form");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 class="round">Certifications <button onclick="detailscertif()">+</button></h2>
+            <section id="certifications" style="display:none;">
+                
                 <p>Hult Prize Level 1 Pitch Course</p>
             </section>
-            <section>
-                <h2 class="round">Compétences</h2>
+            <script>
+                function detailscertif() {
+                    var div = document.getElementById("certifications");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 class="round">Compétences <button onclick="detailscompetences()">+</button></h2>
+            <section id="competences" style="display:none;">
+                
                 <dl>
                     <dt><strong>Langages de programmation/script: </strong></dt>
                     <dd>Python, C/C++, JAVA, VB.net, Script Shell</dd>
@@ -91,20 +139,55 @@
                     <dd>Recherche Opérationnelle</dd>
                   </dl>
             </section>
-            <section>
-                <h2 class="round">Langues</h2>
+            <script>
+                function detailscompetences() {
+                    var div = document.getElementById("competences");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 class="round">Langues <button onclick="detailslangues()">+</button></h2>
+            <section id="langues" style="display:none;">
+                
                     <div><strong>Arabe: </strong>Langue natale</div>
                     <div><strong>Français: </strong>Niveau C1</div>
                     <div><strong>Anglais: </strong>Séjour linguistique en Angletaire</div>
             </section>
-            <section>
-                <h2 class="round">Centre d'intéret</h2>
+            <script>
+                function detailslangues() {
+                    var div = document.getElementById("langues");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 class="round">Centre d'intéret <button onclick="detailsinteret()">+</button></h2>
+            <section id="interet" style="display:none;">
+                
                 <ul>
                     <li>Voyage</li>
                     <li>Music</li>
                     <li>Lecture</li>
                 </ul>
             </section>
+            <script>
+                function detailsinteret() {
+                    var div = document.getElementById("interet");
+                    if (div.style.display === "none") {
+                    div.style.display = "block";
+                    } 
+                    else {
+                    div.style.display = "none";
+                    }
+                }
+            </script>
             <footer>
                 <p> GITHUB :
                     <a href="https://github.com/blauernyx">mon github</a>
