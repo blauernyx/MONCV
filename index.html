@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/resume.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
+        <script src="js/resume.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content= "IE=edge,chrome=1">
         <title>Mon CV</title>
@@ -18,187 +19,195 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         
     </head>
-    <body>
-        <div itemscope itemtype="https://schema.org/Person" id="wrapper" class="info">
-            <header>
-                <div class="gen_info">
-                    <h1>
-                        ROMADI Wissal
-                    </h1>
-                    <h2>
-                        Ingenieur
-                    </h2>
-                    <img src="https://d1bvpoagx8hqbg.cloudfront.net/originals/how-to-take-a-good-photo-for-your-cv-our-top-tips-9c789ace53283a36f7a3ccf9646be14f.jpg" itemprop="image" alt="https://nyheadshots.com/wp-content/uploads/2018/07/headshots-800x536.jpg"/>
-                </div>
+    <body id="wrapper">
+        <header>
+            <div id="function">
+                <h1>
+                    ROMADI Wissal
+                </h1>
+                <h2>
+                    Ingenieur
+                </h2>
+            </div>
+            <div id="pic">
+                <img id="picpro" src="avatarCV.jpg" itemprop="image" alt="https://nyheadshots.com/wp-content/uploads/2018/07/headshots-800x536.jpg"/>
+            </div>
+        </header>
+        <div itemscope itemtype="https://schema.org/Person" id="body" class="info">
+            
+            <div id="info">
                 <div class="contact_info">
                     <p itemprop="address"><i class="fa fa-camera-retro"></i> Brest, France</p>
                     <p itemprop="birthDate"><i class="fa fa-user-o" aria-hidden="true"></i> 22 ans</p>
                     <p itemprop="email" href="wissalromadi@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> wissalromadi@gmail.com</p>
                     <p itemprop="telephone"><i class="fa fa-phone"></i> +334578963425</p>
                 </div>
-            </header>
-            
-            
-            <h2 class="round">Experiences Professionnelles <button onclick="detailsexppro()">+</button></h2>
-            <section id="exppro" style="display:none;">
-                <article>
-                    <h3>Stage de formation à Computime</h3>
-                    <p>Conception et réalisation d'une application desktop d'extraction de données des pointeuses</p>
-                </article>
-                <article>
-                    <h3>Stage d’initiation à I-Gouvernancia</h3>
-                    <p>Mise en place d’un système de management de sécurité de l’information conforme à la norme 27001 : 2013 en vue d’une certification</p>
-                </article>
-            </section>
-            <script>
-                function detailsexppro() {
-                    var div = document.getElementById("exppro");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            
-            <h2 class="round">Projets <button onclick="detailsprojet()">+</button></h2>
-            <section id="projet" style="display:none;">
-                <article>
-                    <h3>Application de gestion de location de voitures</h3>
-                    <p>Gestion des bases de données d'une location de voiture, analyse et visualisation des données.</p>
-                    <p><strong>outils utilisés: </strong>Microsoft Access, SQL, VBA</p>
-                </article>
-                <article>
-                    <h3>Application de gestion de voyages "TRIPPIC"</h3>
-                    <p>Gestion des voyages organisés par des agences de voyages, guides touristiques ou trippers.</p>
-                    <p><strong>outils utilisés: </strong>HTML, CSS, JavaScript,React JS, MySQL, PHP</p>
-                </article>
-            </section>
-            <script>
-                function detailsprojet() {
-                    var div = document.getElementById("projet");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            <h2 class="round">Formation <button onclick="detailsform()">+</button></h2>
-            <section id="form" style="display:none;">
-                
-                <ul>
-                    <li>master 2 en "Développement Logiciel des systèmes d'information à l'Université de Bretagne Occidentale</li>
-                    <li>Cycle d’ingénieur en Management des Systèmes d’Information et de Production à l'École Nationale Supérieure des Mines de Rabat</li>
-                    <li>Classes Préparatoires aux Grandes Ecoles (MPSI-MP)</li>
-                    <li>Baccalauréat en Sciences Mathématiques B – mention Très bien</li>
-                </ul>
-            </section>
-            <script>
-                function detailsform() {
-                    var div = document.getElementById("form");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            <h2 class="round">Certifications <button onclick="detailscertif()">+</button></h2>
-            <section id="certifications" style="display:none;">
-                
-                <p>Hult Prize Level 1 Pitch Course</p>
-            </section>
-            <script>
-                function detailscertif() {
-                    var div = document.getElementById("certifications");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            <h2 class="round">Compétences <button onclick="detailscompetences()">+</button></h2>
-            <section id="competences" style="display:none;">
-                
-                <dl>
-                    <dt><strong>Langages de programmation/script: </strong></dt>
-                    <dd>Python, C/C++, JAVA, VB.net, Script Shell</dd>
-                    <dt><strong>Systèmes de gestion de Base de données: </strong></dt>
-                    <dd>MySQL, SQL Server(SQL2), Oracle(SQL3), MongoDB(NO SQL)</dd>
-                    <dt><strong>Systèmes d’exploitation: </strong></dt>
-                    <dd>Linux, Windows</dd>
-                    <dt><strong>Modélisation et conception: </strong></dt>
-                    <dd>UML</dd>
-                    <dt><strong>Optimisation: </strong></dt>
-                    <dd>Recherche Opérationnelle</dd>
-                  </dl>
-            </section>
-            <script>
-                function detailscompetences() {
-                    var div = document.getElementById("competences");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            <h2 class="round">Langues <button onclick="detailslangues()">+</button></h2>
-            <section id="langues" style="display:none;">
-                
+                <section>
+                    <h2 class="round">Certifications</h2>
+                    <p>Hult Prize Level 1 Pitch Course</p>
+                </section>
+                <section>
+                    <h2 class="round">Compétences</h2>
+                    <dl>
+                        <dt><strong>Langages de programmation/script: </strong></dt>
+                        <dd>
+                            <span data-toggle="tooltip" title="description python">Python,</span> 
+                            <span data-toggle="tooltip" title="description c/c++">C/C++,</span>
+                            <span data-toggle="tooltip" title="description java">JAVA,</span>
+                            <span data-toggle="tooltip" title="description vb.net">VB.net,</span>
+                            <span data-toggle="tooltip" title="description script shell">Script Shell.</span> 
+                        </dd>
+                        <dt><strong>Systèmes de gestion de Base de données: </strong></dt>
+                        <dd>
+                            <span data-toggle="tooltip" title="description MySQL">MySQL,</span> 
+                            <span data-toggle="tooltip" title="description SQL Server(SQL2)">SQL Server(SQL2),</span>
+                            <span data-toggle="tooltip" title="description Oracle(SQL3)">Oracle(SQL3),</span>
+                            <span data-toggle="tooltip" title="description MongoDB(NO SQL)">MongoDB(NO SQL).</span> 
+                        </dd>
+                        <dt><strong>Systèmes d’exploitation: </strong></dt>
+                        <dd>
+                            <span data-toggle="tooltip" title="description Linux">Linux,</span> 
+                            <span data-toggle="tooltip" title="description Windows">Windows.</span>
+                        </dd>
+                        <dt><strong>Modélisation et conception: </strong></dt>
+                        <dd>
+                            <span data-toggle="tooltip" title="description UML">UML.</span>
+                        </dd>
+                        <dt><strong>Optimisation: </strong></dt>
+                        <dd>
+                            <span data-toggle="tooltip" title="description Recherche Opérationnelle">Recherche Opérationnelle.</span>
+                        </dd>
+                    </dl>
+    
+    
+    
+                    <!--ssssssssssssssttttttttttttaaaaaaaaaaaaarrrrrrrrrrrrrsssssssssssssss-->
+                   
+                    
+                </section>
+                <section>
+                    <h2 class="round">Langues</h2>
                     <div><strong>Arabe: </strong>Langue natale</div>
                     <div><strong>Français: </strong>Niveau C1</div>
                     <div><strong>Anglais: </strong>Séjour linguistique en Angletaire</div>
-            </section>
-            <script>
-                function detailslangues() {
-                    var div = document.getElementById("langues");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            <h2 class="round">Centre d'intéret <button onclick="detailsinteret()">+</button></h2>
-            <section id="interet" style="display:none;">
+                </section>
                 
-                <ul>
-                    <li>Voyage</li>
-                    <li>Music</li>
-                    <li>Lecture</li>
-                </ul>
-            </section>
-            <script>
-                function detailsinteret() {
-                    var div = document.getElementById("interet");
-                    if (div.style.display === "none") {
-                    div.style.display = "block";
-                    } 
-                    else {
-                    div.style.display = "none";
-                    }
-                }
-            </script>
-            <footer>
-                <p> GITHUB :
-                    <a href="https://github.com/blauernyx">mon github</a>
-                </p>
-                <p> FACEBOOK :
-                    <a href="https://www.facebook.com/blauer.nyx">mon facebook</a>
-                </p>
-                <p> LINKDIN :
-                    <a href="https://www.linkedin.com/in/wissal-romadi-1973b3203">mon linkedin</a>
-                </p>
-            </footer>
+    
+                <section>
+                    <h2 class="round">Centre d'intéret </h2>
+                    <ul>
+                        <li>Voyage</li>
+                        <li>Music</li>
+                        <li>Lecture</li>
+                    </ul>
+                </section>
+                
+    
+                <footer>
+                    <p> GITHUB :
+                        <a href="https://github.com/blauernyx">mon github</a>
+                    </p>
+                    <p> FACEBOOK :
+                        <a href="https://www.facebook.com/blauer.nyx">mon facebook</a>
+                    </p>
+                    <p> LINKDIN :
+                        <a href="https://www.linkedin.com/in/wissal-romadi-1973b3203">mon linkedin</a>
+                    </p>
+                </footer>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="content">
+                <section>
+                    <h2 class="round">Experiences Professionnelles </h2>
+                    <article>
+                        <h3>Stage de formation à Computime <button onclick="alterner('stg1')">Détails</button></h3>
+                        <div id="stg1" style="display:none;">
+                            <p id="stg1txt">Conception et réalisation d'une application desktop d'extraction de données des pointeuses</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Stage d’initiation à I-Gouvernancia <button onclick="alterner('stg2')">Détails</button></h3>
+                        <div id="stg2" style="display:none;">
+                            <p id="stg2txt">Mise en place d’un système de management de sécurité de l’information conforme à la norme 27001 : 2013 en vue d’une certification</p>
+                        </div>
+                    </article>
+                </section>
+                <section>
+                    <h2 class="round">Projets </h2>
+                    <article>
+                        <h3>Application de gestion de location de voitures</h3>
+                        <p>Gestion des bases de données d'une location de voiture, analyse et visualisation des données.</p>
+                        <p><strong>outils utilisés: </strong>
+                            <span data-toggle="tooltip" title="description Microsoft Access">Microsoft Access,</span> 
+                            <span data-toggle="tooltip" title="description SQL">SQL,</span>
+                            <span data-toggle="tooltip" title="description .VBA">VBA.</span> 
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Application de gestion de voyages "TRIPPIC"</h3>
+                        <p>Gestion des voyages organisés par des agences de voyages, guides touristiques ou trippers.</p>
+                        <p data-toggle="tooltip" title="Des langages de programmation utilisés le plus"><strong>outils utilisés: </strong>
+                            <span data-toggle="tooltip" title="description HTML">HTML,</span> 
+                            <span data-toggle="tooltip" title="description CSS">CSS,</span>
+                            <span data-toggle="tooltip" title="description JavaScript">JavaScript,</span>
+                            <span data-toggle="tooltip" title="description React JS">React JS,</span>
+                            <span data-toggle="tooltip" title="description PHP">PHP,</span>
+                            <span data-toggle="tooltip" title="description script shell">MySQL.</span> 
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <h2 class="round">Formation</h2>
+                    <ul>
+                        <li>master 2 en "Développement Logiciel des systèmes d'information à l'Université de Bretagne Occidentale</li>
+                        <li>Cycle d’ingénieur en Management des Systèmes d’Information et de Production à l'École Nationale Supérieure des Mines de Rabat</li>
+                        <li>Classes Préparatoires aux Grandes Ecoles (MPSI-MP)</li>
+                        <li>Baccalauréat en Sciences Mathématiques B – mention Très bien</li>
+                    </ul>
+                </section>
+                <table>
+                    <thead>
+                       <tr>
+                         <th>competence</th>
+                         <th>Rating</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr class="linux">
+                         <td>linux</td>
+                         <td>
+                            <div class="stars-outer">
+                                <div class="stars-inner"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+                            </div>
+                         </td>
+                       </tr>
+
+
+                       <tr class="windows">
+                         <td>windows</td>
+                         <td>
+                            <div class="stars-outer">
+                                <div class="stars-inner"><i class="fa fa-star" aria-hidden="true"></i></div>
+                            </div>
+                         </td>
+                       </tr>
+
+                       
+                    
+                       <!-- 3 more rows here -->
+                        
+                     </tbody>
+                   </table>
+
+            </div>
+           
         </div>
     </body>
 </html>
