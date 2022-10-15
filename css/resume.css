@@ -85,6 +85,16 @@ h2.round {
   height: 180px;
 }
 
+.timeline{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.stg1content{
+  border-left: 1px solid #5D4954;
+  padding: 1rem;
+  position: relative;
+}
 
 
 
@@ -92,53 +102,108 @@ h2.round {
 
 
 
-  
 
-  table {
-    margin: 0 auto;
-    text-align: center;
-    border-collapse: collapse;
-    border: 1px solid #d4d4d4;
-    font-size: 1em;
-    background: #fff;
-  }
-   
-  table th, 
-  table tr:nth-child(2n+2) {
-    background: #e7e7e7;
-  }
-    
-  table th, 
-  table td {
-    padding: 20px 50px;
-  }
-    
-  table th {
-    border-bottom: 1px solid #d4d4d4;
-  }
 
-  .stars-outer {
-    display: inline-block;
-    position: relative;
-    font-family: FontAwesome;
-  }
-   
-  .stars-outer::before {
-    content: "\f006 \f006 \f006 \f006 \f006";
-  }
-   
-  .stars-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    
-  }
-   
-  .stars-inner::before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    color: #f8ce0b;
-    
-  }
+.python {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.python::before {
+  content: "\f006 \f006 \f006";
+}
+
+
+
+.java {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.java::before {
+  content: "\f006 \f006 \f006 \f006";
+}
+
+.vbnet {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.vbnet::before {
+  content: "\f006 \f006 \f006 \f006";
+}
+
+.shell {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.shell::before {
+  content: "\f006 \f006 \f006";
+}
+
+
+
+.sql2 {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.sql2::before {
+  content: "\f006 \f006 \f006 \f006";
+}
+
+.sql3 {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.sql3::before {
+  content: "\f006 \f006 \f006";
+}
+
+.mongo {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.mongo::before {
+  content: "\f006 \f006 \f006";
+}
+
+.linux {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.linux::before {
+  content: "\f006 \f006 \f006 \f006";
+}
+
+.windows {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.windows::before {
+  content: "\f006 \f006 \f006 \f006";
+}
+
+.UML {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.UML::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.ro {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+.ro::before {
+  content: "\f006 \f006 \f006 \f006";
+}
+

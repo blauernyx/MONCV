@@ -46,15 +46,3 @@ $(document).ready(function(){
 
 
 
-
-function zoomtext(id){
-    var textdiv = document.getElementById(id);
-    var fontSize = textdiv.style.fontSize;
-   
-    if (fontSize !== '0.6em') {
-      textdiv.style.fontSize = '1em';
-    }
-     
-    setTimeout(zoomtext, 1000);
-}
-

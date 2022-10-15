@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/resume.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
-        <script src="js/resume.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content= "IE=edge,chrome=1">
         <title>Mon CV</title>
@@ -15,6 +14,7 @@
         <meta name= "keywords" content= "web,developer,resume">
         <meta name="author" content="Mon nom">
         <meta name="viewport" content= "width=device-width, initial-scale=1">
+        
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         
@@ -22,8 +22,9 @@
     <body id="wrapper">
         <header>
             <div id="function">
-                <h1>
-                    ROMADI Wissal
+              
+              <h1>
+                  ROMADI Wissal
                 </h1>
                 <h2>
                     Ingenieur
@@ -51,39 +52,67 @@
                     <dl>
                         <dt><strong>Langages de programmation/script: </strong></dt>
                         <dd>
-                            <span data-toggle="tooltip" title="description python">Python,</span> 
-                            <span data-toggle="tooltip" title="description c/c++">C/C++,</span>
-                            <span data-toggle="tooltip" title="description java">JAVA,</span>
-                            <span data-toggle="tooltip" title="description vb.net">VB.net,</span>
-                            <span data-toggle="tooltip" title="description script shell">Script Shell.</span> 
+                          <div>
+                            <span data-toggle="tooltip" title="description python">Python</span>
+                            <span class="python"> </span>
+                          </div>
+                          
+                          <div>
+                            <span data-toggle="tooltip" title="description java">JAVA</span>
+                            <span class="java"> </span>
+                          </div>
+                          <div>
+                            <span data-toggle="tooltip" title="description vb.net">VB.net</span>
+                            <span class="vbnet"> </span>
+                          </div>
+                          <div>
+                            <span data-toggle="tooltip" title="description script shell">Script Shell</span>
+                            <span class="shell"> </span>
+                          </div>  
                         </dd>
+                        
                         <dt><strong>Systèmes de gestion de Base de données: </strong></dt>
                         <dd>
-                            <span data-toggle="tooltip" title="description MySQL">MySQL,</span> 
-                            <span data-toggle="tooltip" title="description SQL Server(SQL2)">SQL Server(SQL2),</span>
-                            <span data-toggle="tooltip" title="description Oracle(SQL3)">Oracle(SQL3),</span>
-                            <span data-toggle="tooltip" title="description MongoDB(NO SQL)">MongoDB(NO SQL).</span> 
+                          
+                          <div>
+                            <span data-toggle="tooltip" title="description SQL Server(SQL2) ">SQL Server(SQL2)</span>
+                            <span class="sql2"> </span>
+                          </div> 
+                          <div>
+                            <span data-toggle="tooltip" title="description Oracle(SQL3)">Oracle(SQL3)</span>
+                            <span class="sql3"> </span>
+                          </div> 
+                          <div>
+                            <span data-toggle="tooltip" title="description MongoDB(NO SQL)">MongoDB(NO SQL)</span>
+                            <span class="mongo"> </span>
+                          </div> 
                         </dd>
                         <dt><strong>Systèmes d’exploitation: </strong></dt>
                         <dd>
-                            <span data-toggle="tooltip" title="description Linux">Linux,</span> 
-                            <span data-toggle="tooltip" title="description Windows">Windows.</span>
+                          <div>
+                            <span data-toggle="tooltip" title="description Linux">Linux</span>
+                            <span class="linux"> </span>
+                          </div>
+                          <div>
+                            <span data-toggle="tooltip" title="description Windows">Windows</span>
+                            <span class="windows"> </span>
+                          </div>
                         </dd>
                         <dt><strong>Modélisation et conception: </strong></dt>
                         <dd>
-                            <span data-toggle="tooltip" title="description UML">UML.</span>
+                          <div>
+                            <span data-toggle="tooltip" title="description UML">UML</span>
+                            <span class="UML"> </span>
+                          </div>
                         </dd>
                         <dt><strong>Optimisation: </strong></dt>
                         <dd>
-                            <span data-toggle="tooltip" title="description Recherche Opérationnelle">Recherche Opérationnelle.</span>
+                          <div>
+                            <span data-toggle="tooltip" title="description Recherche Opérationnelle">Recherche Opérationnelle</span>
+                            <span class="ro"> </span>
+                          </div>
                         </dd>
                     </dl>
-    
-    
-    
-                    <!--ssssssssssssssttttttttttttaaaaaaaaaaaaarrrrrrrrrrrrrsssssssssssssss-->
-                   
-                    
                 </section>
                 <section>
                     <h2 class="round">Langues</h2>
@@ -101,43 +130,39 @@
                         <li>Lecture</li>
                     </ul>
                 </section>
-                
-    
-                <footer>
-                    <p> GITHUB :
-                        <a href="https://github.com/blauernyx">mon github</a>
-                    </p>
-                    <p> FACEBOOK :
-                        <a href="https://www.facebook.com/blauer.nyx">mon facebook</a>
-                    </p>
-                    <p> LINKDIN :
-                        <a href="https://www.linkedin.com/in/wissal-romadi-1973b3203">mon linkedin</a>
-                    </p>
-                </footer>
             </div>
-
-
-
-
-
-
-
 
             <div id="content">
                 <section>
                     <h2 class="round">Experiences Professionnelles </h2>
-                    <article>
-                        <h3>Stage de formation à Computime <button onclick="alterner('stg1')">Détails</button></h3>
-                        <div id="stg1" style="display:none;">
-                            <p id="stg1txt">Conception et réalisation d'une application desktop d'extraction de données des pointeuses</p>
+                    <div class="timeline">
+                      <div class="stg1gauche">
+                        <p>Juillet 2022 - Aout 2022</p>
+                      </div>
+                        <div class="stg1droite">
+                          <div class="stg1content">
+                            <h3>Stage de formation à Computime <button onclick="alterner('stg1')">Détails</button></h3>
+                            <div id="stg1" style="display:none;">
+                              <p id="stg1txt">Conception et réalisation d'une application desktop d'extraction de données des pointeuses</p>
+                            </div>
+                          </div>
                         </div>
-                    </article>
-                    <article>
-                        <h3>Stage d’initiation à I-Gouvernancia <button onclick="alterner('stg2')">Détails</button></h3>
-                        <div id="stg2" style="display:none;">
-                            <p id="stg2txt">Mise en place d’un système de management de sécurité de l’information conforme à la norme 27001 : 2013 en vue d’une certification</p>
+                        
+                    </div>
+                    <div class="timeline">
+                      <div class="stg2gauche">
+                        <p>Juin 2021 - Juillet 2021</p>
+                      </div>
+                        <div class="stg2droite">
+                          <div class="stg1content">
+                          <h3>Stage d’initiation à I-Gouvernancia <button onclick="alterner('stg2')">Détails</button></h3>
+                          <div id="stg2" style="display:none;">
+                              <p id="stg2txt">Mise en place d’un système de management de sécurité de l’information conforme à la norme 27001 : 2013 en vue d’une certification</p>
+                          </div>
+                          </div>
                         </div>
-                    </article>
+                        
+                    </div>
                 </section>
                 <section>
                     <h2 class="round">Projets </h2>
@@ -166,48 +191,27 @@
                 <section>
                     <h2 class="round">Formation</h2>
                     <ul>
-                        <li>master 2 en "Développement Logiciel des systèmes d'information à l'Université de Bretagne Occidentale</li>
-                        <li>Cycle d’ingénieur en Management des Systèmes d’Information et de Production à l'École Nationale Supérieure des Mines de Rabat</li>
-                        <li>Classes Préparatoires aux Grandes Ecoles (MPSI-MP)</li>
-                        <li>Baccalauréat en Sciences Mathématiques B – mention Très bien</li>
+                        <li>master 2 en "Développement Logiciel des systèmes d'information à l'Université de Bretagne Occidentale <strong> (2022-2023)</strong></li>
+                        <li>Cycle d’ingénieur en Management des Systèmes d’Information et de Production à l'École Nationale Supérieure des Mines de Rabat <strong> (2020-2022)</strong></li>
+                        <li>Classes Préparatoires aux Grandes Ecoles (MPSI-MP) <strong> (2028-2020)</strong></li>
+                        <li>Baccalauréat en Sciences Mathématiques B – mention Très bien <strong> (2017-2018)</strong></li>
                     </ul>
                 </section>
-                <table>
-                    <thead>
-                       <tr>
-                         <th>competence</th>
-                         <th>Rating</th>
-                       </tr>
-                     </thead>
-                     <tbody>
-                       <tr class="linux">
-                         <td>linux</td>
-                         <td>
-                            <div class="stars-outer">
-                                <div class="stars-inner"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                            </div>
-                         </td>
-                       </tr>
-
-
-                       <tr class="windows">
-                         <td>windows</td>
-                         <td>
-                            <div class="stars-outer">
-                                <div class="stars-inner"><i class="fa fa-star" aria-hidden="true"></i></div>
-                            </div>
-                         </td>
-                       </tr>
-
-                       
-                    
-                       <!-- 3 more rows here -->
-                        
-                     </tbody>
-                   </table>
-
+                <footer>
+                    <p> GITHUB :
+                        <a href="https://github.com/blauernyx">mon github</a>
+                    </p>
+                    <p> FACEBOOK :
+                        <a href="https://www.facebook.com/blauer.nyx">mon facebook</a>
+                    </p>
+                    <p> LINKDIN :
+                        <a href="https://www.linkedin.com/in/wissal-romadi-1973b3203">mon linkedin</a>
+                    </p>
+                </footer> 
             </div>
            
         </div>
-    </body>
+        <script src="js/resume.js"></script>
+
+       </body>
 </html>
